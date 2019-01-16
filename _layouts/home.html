@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h2 class="post-list-heading">About</h2>
+  <p>Third year <em>CS & DS student at <a href="http://berkeley.edu">UC Berkeley</a></em>. Previously worked on <em>ML and Full Stack Web projects at <a href="http://stock.adobe.com">Adobe Stock</a> & <a href="http://skillflow.io">Skillflow</a></em>. <em>Links:</em> <a href="http://github.com/mohammedabdulwahhab">Github</a>, <a href="https://resume.creddle.io/resume/j29ls1ywday">Resume</a>, <a href="http://linkedin.com/in/mabdulwahhab
+">LinkedIn</a>. Interested in SWE internships & co-ops for 2019 <br><br>
+
+
+I created this site to document everything I learn, and share what I'm upto with the world.  <strong>(New articles weekly on Big Data, ML, Web and other things CS) </strong>Feel free to reach out to me if anything catches your interest!
+  </p>
+
+
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">Articles</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+
+  {%- endif -%}
+
+</div>

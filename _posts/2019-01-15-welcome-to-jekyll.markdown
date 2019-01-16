@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Jekyll 101: Complete guide to getting started with Jekyll"
 date:   2019-01-15 19:09:52 -0800
 categories: jekyll update
 ---

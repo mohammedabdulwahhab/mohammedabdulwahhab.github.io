@@ -16,8 +16,7 @@
 title: Mohammed Abdulwahhab
 email: furkhan324@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  I created this site to document everything I learn, and share my learnings with the world. I find the best way to cement understanding of a concept is to teach the same concept.
-  If you find any article on the site useful be sure to leave a comment.
+  Built with Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  furkhan324
